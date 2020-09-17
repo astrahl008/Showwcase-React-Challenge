@@ -1,9 +1,10 @@
 import React from 'react';
 import logo from './showwcase-logo.svg';
 import './App.css';
+import Nav from './Nav';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-function Index() {
+function ForFun() {
   return <div>
     <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -27,8 +28,8 @@ function App() {
 
         <Router>
             <div>
-            {/*<Route path="/" exact component={Nav} />*/}
-            <Route path="/" exact component={Index} />
+            <Route path="/" exact component={Nav} />
+            <Route path="/" exact component={ForFun} />
             </div>
         </Router>
 
