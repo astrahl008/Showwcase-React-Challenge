@@ -21,6 +21,13 @@ function ForFun() {
   </div>;
 }
 
+function Intro() {
+  return <div>
+    <p>Hi there! Welcome to your education showcase</p>
+    <p>Type your name and click "Enter" below to begin!</p>
+  </div>
+}
+
 function App() {
   return (
     <div className="App">
@@ -30,6 +37,7 @@ function App() {
             <div>
             <Route path="/" exact component={Nav} />
             <Route path="/" exact component={ForFun} />
+            <Route path="/" exact component={Intro} />
             </div>
         </Router>
 

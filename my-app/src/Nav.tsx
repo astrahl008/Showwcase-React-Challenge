@@ -4,11 +4,8 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 function Nav() {
     return <nav>
-      <ul>
-        <li>
-          <Link to="/App">Home</Link>
-        </li>
-      </ul>
+        <Link to="/App">Home</Link>
+        <Link to="/Intro">Intro</Link>
     </nav>
   }
 
