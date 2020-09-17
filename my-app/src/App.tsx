@@ -20,31 +20,6 @@ function Index() {
   </div>;
 }
 
-function Product({ match }) {
-  return <div>
-    <Router>
-      <Route path="/" exact component={Nav} />
-    </Router>
-    <h2>This is a page for product with ID: {match.params.id} </h2>;
-  </div>
-}
-
-function Nav() {
-  return <nav>
-    <ul>
-      <li>
-        <Link to="/">Home</Link>
-      </li>
-      <li>
-        <Link to="/products/1">Introduction</Link>
-      </li>
-      <li>
-        <Link to="/products/2">Main</Link>
-      </li>
-    </ul>
-  </nav>
-}
-
 function App() {
   return (
     <div className="App">
@@ -52,16 +27,12 @@ function App() {
 
         <Router>
             <div>
-            <Route path="/" exact component={Nav} />
+            {/*<Route path="/" exact component={Nav} />*/}
             <Route path="/" exact component={Index} />
-            <Route path="/products/:id" component={Product} />
             </div>
         </Router>
 
       </header>
-      <body>
-        
-      </body>
     </div>
   );
 }
